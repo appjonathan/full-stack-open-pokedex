@@ -18,3 +18,5 @@ jobs:
               run: npm run eslint -- --fix
             - name: build
               run: npm run build
+            - name: run tests
+              run: npm run test
