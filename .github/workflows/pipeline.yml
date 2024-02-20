@@ -28,6 +28,8 @@ jobs:
         needs: [simple_deployment_pipeline]  
         runs-on: ubuntu-20.04
         steps:
+            - name: checkout code
+              uses: actions/checkout@v3
             - name: bump version
               uses: anothrNick/github-tag-action@1.67.0
               env:
